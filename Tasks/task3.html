@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task_3</title>
+  </head>
+  <body>
+    <h1>Задача 5</h1>
+    <script>
+      //Задача 5. Створити окремі функції, які переводять:
+      //Сантиметри у дюйми;
+      //Кілограми у фунти;
+      //Кілометри у милі.
+
+      const INCH = 2.54;
+      const FUNT = 2.20462;
+      const MULI = 1.60934;
+      // виводимо змінні
+      let userSmLenght = parseFloat(prompt("введіть довжину в см"));
+      let userKiloWeight = parseFloat(prompt("введіть вагу в кг"));
+      let userKmLenght = parseFloat(prompt("введіть довжину в км"));
+      // описуємо функції
+      let smToInch = (userLenght) => userLenght / INCH;
+      let kiloToFunt = (userWeight) => userWeight * FUNT;
+      let kmToMuli = (userLenght) => userLenght / MULI;
+      // виводимо відповідь
+      document.write(`${smToInch(userSmLenght).toFixed(2)} дюймів <br>`);
+      document.write(`${kiloToFunt(userKiloWeight).toFixed(2)} фунтів <br>`);
+      document.write(`${kmToMuli(userKmLenght).toFixed(2)} миль <br>`);
+    </script>
+  </body>
+</html>

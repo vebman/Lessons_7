@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task_5</title>
+  </head>
+  <body>
+    <h1>Задача 6</h1>
+    <script>
+      // Задача 6. Створити функцію, яка створює таблицю з вказаною кількістю рядків і стовпців (таблиця заповнюється заданим фіксованим повідомленням).
+      let userRowsNumber = parseInt(prompt("Введіть кількість рядків"));
+      let userColumsNumber = parseInt(prompt("Введіть кількість стовпчиків"));
+      let userMassage = prompt("Ведіть повідомленян");
+      function showTable(rows, colums, massage) {
+        document.write("<table>");
+        for (let i = 0; i < rows; i++) {
+          document.write("<tr>");
+          for (let j = 0; j < colums; j++) {
+            document.write(`<td> ${massage}</td>`);
+          }
+
+          document.write("/<tr>");
+        }
+        document.write("</table>");
+      }
+      showTable(userRowsNumber, userColumsNumber, userMassage);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task_1</title>
+  </head>
+  <body>
+    <h1>Задача 0</h1>
+    <script>
+      // Створити функцію, яка за номером місяця повертає пору року, до якої відноситься цей місяць.
+
+      // Cтворюємо функцію для знаходження місяця за номером
+      function showMonth(monthNumber) {
+        let result;
+        if (monthNumber === 0 || monthNumber > 12) {
+          result = "Некоректний місяць";
+        } else if (monthNumber < 3 || monthNumber === 12) {
+          result = "Зима";
+        } else if (monthNumber < 6) {
+          result = "Becна";
+        } else if (monthNumber < 9) {
+          result = "Літо";
+        } else if (monthNumber <= 11) {
+          result = "Осінь";
+        }
+        return result;
+      }
+      // вводимо данні
+      const userMonthNumber = parseInt(prompt("введіть номер місяця"));
+      // виводимо результат
+      document.write(showMonth(userMonthNumber));
+    </script>
+  </body>
+</html>

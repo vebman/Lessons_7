@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tusk_4</title>
+  </head>
+  <body>
+    <h1>Задача 3</h1>
+    <script>
+      /* Задача 3. Створити окремі функції, які для 4 чисел знаходять:
+1)суму;
+2)добуток;
+3)середнє арифметичне;
+4)мінімальне значення. 
+*/
+      // вводимо змінні
+      let num1 = parseInt(prompt("Введіть перше число"));
+      let num2 = parseInt(prompt("Введіть друге число"));
+      let num3 = parseInt(prompt("Введіть третє число"));
+      let num4 = parseInt(prompt("Введіть четверте число"));
+      //описуємо функції
+      let getSum = (sum) => num1 + num2 + num3 + num4;
+      let getProduct = (product) => num1 * num2 * num3 * num4;
+      let getAvarage = (avarage) => (num1 * num2 * num3 * num4) / 4;
+      function getMin(num1, num2, num3, num4) {
+        let result = Infinity;
+        if (result > num1) result = num1;
+        if (result > num2) result = num2;
+        if (result > num3) result = num3;
+        if (result > num4) result = num4;
+        return result;
+      }
+      document.write(` сума = ${getSum(num1, num2, num3, num4)} <br>`);
+      document.write(` добуток = ${getProduct(num1, num2, num3, num4)} <br>`);
+      document.write(`середнє = ${getAvarage(num1, num2, num3, num4)} <br>`);
+      document.write(`мінімальне = ${getMin(num1, num2, num3, num4)} <br>`);
+    </script>
+  </body>
+</html>
